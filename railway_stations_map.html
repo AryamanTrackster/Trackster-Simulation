@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5f6c6a1ad8d19804fbb26185ea4dd73d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_5f6c6a1ad8d19804fbb26185ea4dd73d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_5f6c6a1ad8d19804fbb26185ea4dd73d = L.map(
+                "map_5f6c6a1ad8d19804fbb26185ea4dd73d",
+                {
+                    center: [28.6565, 77.2173],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_91f6a4a8d12a4df1e6420ef199bc3fec = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_91f6a4a8d12a4df1e6420ef199bc3fec.addTo(map_5f6c6a1ad8d19804fbb26185ea4dd73d);
+        
+    
+            var marker_c4242e0be8aaf901dd4c6a95a846adba = L.marker(
+                [28.6565, 77.2173],
+                {
+}
+            ).addTo(map_5f6c6a1ad8d19804fbb26185ea4dd73d);
+        
+    
+            var icon_60cd6054eb8ba7d3a830025c748918b6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "train",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_c4242e0be8aaf901dd4c6a95a846adba.setIcon(icon_60cd6054eb8ba7d3a830025c748918b6);
+        
+    
+        var popup_cbd0fd224ba27351dcb67197af4a0890 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_42424b55349490317e8632e0197eb0ec = $(`<div id="html_42424b55349490317e8632e0197eb0ec" style="width: 100.0%; height: 100.0%;"><b>Station Name:</b> Delhi Junction<br><b>Station Code:</b> DLI<br><b>Distance:</b> 0 km<br><b>Track Gradient:</b> 0%<br><b>Speed Limit:</b> 80 km/h</div>`)[0];
+                popup_cbd0fd224ba27351dcb67197af4a0890.setContent(html_42424b55349490317e8632e0197eb0ec);
+            
+        
+
+        marker_c4242e0be8aaf901dd4c6a95a846adba.bindPopup(popup_cbd0fd224ba27351dcb67197af4a0890)
+        ;
+
+        
+    
+    
+            marker_c4242e0be8aaf901dd4c6a95a846adba.bindTooltip(
+                `<div>
+                     Delhi Junction
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_cb1050e02678cdee74d03ee13a963b73 = L.marker(
+                [28.6425, 77.2211],
+                {
+}
+            ).addTo(map_5f6c6a1ad8d19804fbb26185ea4dd73d);
+        
+    
+            var icon_c30ee5bc6342c0668c62c428908bdd0e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "train",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_cb1050e02678cdee74d03ee13a963b73.setIcon(icon_c30ee5bc6342c0668c62c428908bdd0e);
+        
+    
+        var popup_d859fa199f6dfb8ef103d960cb056858 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5facb95d9dac2b0e4964d9c31cf7de74 = $(`<div id="html_5facb95d9dac2b0e4964d9c31cf7de74" style="width: 100.0%; height: 100.0%;"><b>Station Name:</b> New Delhi<br><b>Station Code:</b> NDLS<br><b>Distance:</b> 2.5 km<br><b>Track Gradient:</b> 0%<br><b>Speed Limit:</b> 80 km/h</div>`)[0];
+                popup_d859fa199f6dfb8ef103d960cb056858.setContent(html_5facb95d9dac2b0e4964d9c31cf7de74);
+            
+        
+
+        marker_cb1050e02678cdee74d03ee13a963b73.bindPopup(popup_d859fa199f6dfb8ef103d960cb056858)
+        ;
+
+        
+    
+    
+            marker_cb1050e02678cdee74d03ee13a963b73.bindTooltip(
+                `<div>
+                     New Delhi
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d1d1a849559a8aa519e93e15153e1601 = L.marker(
+                [28.6458, 77.315],
+                {
+}
+            ).addTo(map_5f6c6a1ad8d19804fbb26185ea4dd73d);
+        
+    
+            var icon_47f15f084f558e34654a75eab9a571b9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "train",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_d1d1a849559a8aa519e93e15153e1601.setIcon(icon_47f15f084f558e34654a75eab9a571b9);
+        
+    
+        var popup_96d67d3eab0f77406c612f7f70f576cb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6472980af0888cffe2bf1e054272c721 = $(`<div id="html_6472980af0888cffe2bf1e054272c721" style="width: 100.0%; height: 100.0%;"><b>Station Name:</b> Anand Vihar Terminal<br><b>Station Code:</b> ANVT<br><b>Distance:</b> 8.7 km<br><b>Track Gradient:</b> 0.1%<br><b>Speed Limit:</b> 90 km/h</div>`)[0];
+                popup_96d67d3eab0f77406c612f7f70f576cb.setContent(html_6472980af0888cffe2bf1e054272c721);
+            
+        
+
+        marker_d1d1a849559a8aa519e93e15153e1601.bindPopup(popup_96d67d3eab0f77406c612f7f70f576cb)
+        ;
+
+        
+    
+    
+            marker_d1d1a849559a8aa519e93e15153e1601.bindTooltip(
+                `<div>
+                     Anand Vihar Terminal
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_68edc78e6e5175b1e0812687e853a370 = L.marker(
+                [28.6772, 77.3722],
+                {
+}
+            ).addTo(map_5f6c6a1ad8d19804fbb26185ea4dd73d);
+        
+    
+            var icon_2269bad70979ccb1d937232d90737405 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "train",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_68edc78e6e5175b1e0812687e853a370.setIcon(icon_2269bad70979ccb1d937232d90737405);
+        
+    
+        var popup_9a19071485e169b2b1efa13fd68747e5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_36438308ab5749cf28d48bddb80b6073 = $(`<div id="html_36438308ab5749cf28d48bddb80b6073" style="width: 100.0%; height: 100.0%;"><b>Station Name:</b> Sahibabad<br><b>Station Code:</b> SBB<br><b>Distance:</b> 12.9 km<br><b>Track Gradient:</b> 0.2%<br><b>Speed Limit:</b> 100 km/h</div>`)[0];
+                popup_9a19071485e169b2b1efa13fd68747e5.setContent(html_36438308ab5749cf28d48bddb80b6073);
+            
+        
+
+        marker_68edc78e6e5175b1e0812687e853a370.bindPopup(popup_9a19071485e169b2b1efa13fd68747e5)
+        ;
+
+        
+    
+    
+            marker_68edc78e6e5175b1e0812687e853a370.bindTooltip(
+                `<div>
+                     Sahibabad
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_54ba2ca71de7d1ba2e0d1381cf827bae = L.marker(
+                [28.6692, 77.4395],
+                {
+}
+            ).addTo(map_5f6c6a1ad8d19804fbb26185ea4dd73d);
+        
+    
+            var icon_23ed3c911c0d9a4bb164a827e553fa61 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "train",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_54ba2ca71de7d1ba2e0d1381cf827bae.setIcon(icon_23ed3c911c0d9a4bb164a827e553fa61);
+        
+    
+        var popup_fd844e2f2e912a5a3e8d019149aa76c4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c5f87c1aba1aeee21e3bbc71b27db0bb = $(`<div id="html_c5f87c1aba1aeee21e3bbc71b27db0bb" style="width: 100.0%; height: 100.0%;"><b>Station Name:</b> Ghaziabad Junction<br><b>Station Code:</b> GZB<br><b>Distance:</b> 16.4 km<br><b>Track Gradient:</b> 0.1%<br><b>Speed Limit:</b> 110 km/h</div>`)[0];
+                popup_fd844e2f2e912a5a3e8d019149aa76c4.setContent(html_c5f87c1aba1aeee21e3bbc71b27db0bb);
+            
+        
+
+        marker_54ba2ca71de7d1ba2e0d1381cf827bae.bindPopup(popup_fd844e2f2e912a5a3e8d019149aa76c4)
+        ;
+
+        
+    
+    
+            marker_54ba2ca71de7d1ba2e0d1381cf827bae.bindTooltip(
+                `<div>
+                     Ghaziabad Junction
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
